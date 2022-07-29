@@ -11,9 +11,6 @@
 	color-scheme: light dark;
 	color: black;
 	background-color: #333;
-
-	--bt-scale-x: 8;
-	--bt-scale-y: 8;
 }
 
 body {
