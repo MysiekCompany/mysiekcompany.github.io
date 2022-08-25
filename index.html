@@ -2,53 +2,60 @@
 <html lang="pl" class="scroll-smooth">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/assets/logomsc.cd6c596a.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/assets/logomsc.cd6c596a.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  
+    
 
-  
+    
+    
 
-  <title>MysiekCompany</title>
-  <script type="module" crossorigin src="/assets/index.c6ed0bfa.js"></script>
-  <link rel="stylesheet" href="/assets/index.5fb26b9a.css">
+    <title>MysiekCompany</title>
+  <script type="module" crossorigin src="/assets/index.fc457978.js"></script>
+  <link rel="stylesheet" href="/assets/index.15b7000f.css">
 </head>
 
-<body class="text-center">
-  <div class="flex flex-col">
-    <nav class="fixed w-full z-20 flex items-center justify-between px-3 text-white font-semibold text-xl transition-colors" id="navbar">
-      <p class="p-5">MysiekCompany</p>
-      <ul class="navList uppercase p-5">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#onas">O nas</a></li>
-        <li><a href="#oferta">Co oferujemy</a></li>
-        <li><a href="#rekru">Rekrutacja</a></li>
-        <li><a href="#regulamin">Regulamin</a></li>
-      </ul>
-    </nav>
-    <header class="relative">
-      <img src="/assets/siedziba.f6c750d7.png" class="heroBackground" alt="Siedziba MysiekCompany">
-      <div class="absolute bg-gray-900/[.6] top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-        <p class="text-white uppercase text-5xl 2xl:text-7xl font-semibold" id="hero-text">Najlepsza wirtualna spedycja w
-          Polsce</p>
-        <button
-          class="relative z-10 mt-10 before:z-[-1] before:scale-0 before:w-[calc(100%+1rem)] before:h-[calc(100%+1rem)] before:bg-sky-600/80 before:block before:absolute before:-translate-x-[.5rem] before:-translate-y-[.5rem] before:rounded before:transform-gpu before:transition-transform focus:before:scale-100">
-          <p
-            class="px-10 py-4 text-xl block rounded uppercase transition-colors bg-sky-500 hover:bg-sky-600 active:outline active:outline-2 active:outline-yellow-400">
-            Dowiedz się więcej</p>
+<body class="bg-gray-900 text-center">
+<div class="flex flex-col">
+    <nav class="after:dark:bg-cyan-900 after:bg-cyan-700 after:lg:bg-transparent after:absolute after:inset-0 after:-z-[1] isolate fixed top-0 w-full z-20 flex items-center justify-between px-3 text-white font-semibold text-xl transition-colors"
+         id="navbar">
+        <p class="p-5">MysiekCompany</p>
+        <button class="block bg-white text-black px-4 py-2 rounded mr-5 my-4 space-y-2 lg:hidden" id="menu-toggle">
+            <div class="w-8 h-0.5 bg-gray-600"></div>
+            <div class="w-8 h-0.5 bg-gray-600"></div>
+            <div class="w-8 h-0.5 bg-gray-600"></div>
         </button>
-      </div>
+        <div class="absolute menu-hidden overflow-hidden -z-10 w-full lg:w-auto px-3 lg:px-0 lg:z-auto left-0 top-full dark:bg-cyan-900 bg-cyan-700 lg:bg-transparent lg:block lg:static transition-transform origin-top" id="menu">
+            <ul class="navList leading-10 lg:leading-normal uppercase p-5">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#onas">O nas</a></li>
+                <li><a href="#oferta" class="bg-transparent">Co oferujemy</a></li>
+                <li><a href="#rekru">Rekrutacja</a></li>
+                <li><a href="#regulamin">Regulamin</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--@formatter:off-->
+    <header class="relative flex flex-col justify-center items-center px-10 py-32 min-h-screen isolate after:absolute after:inset-0 after:-z-[1] after:opacity-40 after:bg-cover after:bg-center after:bg-siedziba">
+        <p class="leading-snug text-white uppercase text-5xl 2xl:text-7xl font-semibold" id="hero-text">Najlepsza wirtualna spedycja w Polsce</p>
+        <button class="relative z-10 mt-10 before:z-[-1] before:scale-0 before:w-[calc(100%+1rem)] before:h-[calc(100%+1rem)] before:bg-sky-600/80 before:block before:absolute before:-translate-x-[.5rem] before:-translate-y-[.5rem] before:rounded before:transform-gpu before:transition-transform focus:before:scale-100">
+            <p class="px-10 py-4 text-xl block rounded uppercase transition-colors bg-sky-500 hover:bg-sky-600 active:outline active:outline-2 active:outline-yellow-400">Dowiedz się więcej</p>
+        </button>
     </header>
+    <!--@formatter:on-->
     <main class="bg-white dark:bg-gray-800 dark:text-white flex flex-col items-center justify-center py-14" id="onas">
-      <p class="text-6xl uppercase tracking-wider rounded border-2 border-black dark:bg-gray-700 dark:border-sky-500 shadow-lg p-8 shadow-gray-400 dark:shadow-sky-500">
-        O nas</p>
-      <div class="flex max-w-6xl mt-10">
-        <img src="/assets/mysocial24.294ea92e.png" class="flex-1 h-48 rounded-full" alt="Mysocial24">
-        <p class="text-2xl ml-10 flex-grow flex items-center text-justify justify-center">MysiekCompany to niewielka wirtualna spedycja w grze ETS2. Jej właścicielem jest youtuber Mysocial24, który zgromadził na swoim kanale ponad 60 tys. subskrybcji. Jako, że głównym tematem jego kanału są symulatory, do których ETS2 się zalicza, postanowił założyć własną wirtualną spedycję.</p>
-      </div>
+        <p class="text-6xl uppercase tracking-wider rounded border-2 border-black dark:bg-gray-700 dark:border-sky-500 shadow-lg p-8 shadow-gray-400 dark:shadow-sky-500">
+            O nas</p>
+        <div class="flex flex-col justify-center items-center md:flex-row max-w-screen-lg mx-10 mt-12">
+            <img src="/assets/mysocial24.294ea92e.png" class="flex-1 mx-auto md:mx-0 max-h-48 rounded-full" alt="Mysocial24">
+            <p class="text-2xl mt-10 md:mt-0 md:ml-10 flex-grow flex items-center text-center md:text-left justify-center">
+                MysiekCompany to niewielka wirtualna spedycja w grze ETS2. Jej właścicielem jest youtuber Mysocial24,
+                który zgromadził na swoim kanale ponad 60 tys. subskrybcji. Jako, że głównym tematem jego kanału są
+                symulatory, do których ETS2 się zalicza, postanowił założyć własną wirtualną spedycję.</p>
+        </div>
     </main>
-  </div>
+</div>
 </body>
 
 </html>
