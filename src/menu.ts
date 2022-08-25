@@ -11,7 +11,7 @@ if (toggleButton instanceof HTMLButtonElement && menu !== null) {
     // @ts-ignore
     for (const menuElement of menuElements) {
         menuElement.addEventListener('click', () => {
-            menu.classList.remove('menu-hidden');
+            menu.classList.add('menu-hidden');
         })
     }
 }
