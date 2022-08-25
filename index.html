@@ -8,13 +8,16 @@
 
   
 
+  
+
   <title>MysiekCompany</title>
-  <link rel="stylesheet" href="/assets/index.7d1b0065.css">
+  <script type="module" crossorigin src="/assets/index.c6ed0bfa.js"></script>
+  <link rel="stylesheet" href="/assets/index.5fb26b9a.css">
 </head>
 
-<body>
+<body class="text-center">
   <div class="flex flex-col">
-    <nav class="fixed w-full text-center z-10 flex items-center justify-between px-3 text-white font-semibold text-xl">
+    <nav class="fixed w-full z-20 flex items-center justify-between px-3 text-white font-semibold text-xl transition-colors" id="navbar">
       <p class="p-5">MysiekCompany</p>
       <ul class="navList uppercase p-5">
         <li class="active"><a href="#">Home</a></li>
@@ -27,7 +30,7 @@
     <header class="relative">
       <img src="/assets/siedziba.f6c750d7.png" class="heroBackground" alt="Siedziba MysiekCompany">
       <div class="absolute bg-gray-900/[.6] top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center">
-        <p class="text-white uppercase text-5xl 2xl:text-7xl font-semibold text-center">Najlepsza wirtualna spedycja w
+        <p class="text-white uppercase text-5xl 2xl:text-7xl font-semibold" id="hero-text">Najlepsza wirtualna spedycja w
           Polsce</p>
         <button
           class="relative z-10 mt-10 before:z-[-1] before:scale-0 before:w-[calc(100%+1rem)] before:h-[calc(100%+1rem)] before:bg-sky-600/80 before:block before:absolute before:-translate-x-[.5rem] before:-translate-y-[.5rem] before:rounded before:transform-gpu before:transition-transform focus:before:scale-100">
@@ -37,10 +40,13 @@
         </button>
       </div>
     </header>
-    <main class="basis-96 bg-white flex flex-col items-center justify-center" id="onas">
-      <p class="text-6xl uppercase tracking-wider rounded border-2 border-black shadow-lg p-8 shadow-gray-400">
+    <main class="bg-white dark:bg-gray-800 dark:text-white flex flex-col items-center justify-center py-14" id="onas">
+      <p class="text-6xl uppercase tracking-wider rounded border-2 border-black dark:bg-gray-700 dark:border-sky-500 shadow-lg p-8 shadow-gray-400 dark:shadow-sky-500">
         O nas</p>
-      <p class="text-xl mt-10">Mysiek jest super, bo zrobił super firmę. Zapraszamy wszystkich posiadaczy ETS2 :)</p>
+      <div class="flex max-w-6xl mt-10">
+        <img src="/assets/mysocial24.294ea92e.png" class="flex-1 h-48 rounded-full" alt="Mysocial24">
+        <p class="text-2xl ml-10 flex-grow flex items-center text-justify justify-center">MysiekCompany to niewielka wirtualna spedycja w grze ETS2. Jej właścicielem jest youtuber Mysocial24, który zgromadził na swoim kanale ponad 60 tys. subskrybcji. Jako, że głównym tematem jego kanału są symulatory, do których ETS2 się zalicza, postanowił założyć własną wirtualną spedycję.</p>
+      </div>
     </main>
   </div>
 </body>
