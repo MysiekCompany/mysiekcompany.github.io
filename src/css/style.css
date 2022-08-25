@@ -8,9 +8,7 @@
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 
-	color-scheme: light dark;
 	color: black;
-	background-color: #333;
 }
 
 body {
@@ -24,15 +22,31 @@ body {
 }
 
 ul.navList > li {
-	display: inline-block;
-	margin-left: 15px;
-	cursor: pointer;
-}
-
-ul.navList > li:first-of-type {
-	margin-left: 0;
+	@apply block;
+	@apply cursor-pointer;
+	@apply text-left;
 }
 
 ul.navList > li.active {
 	color: #7dd3fc;
+}
+
+.menu-hidden {
+	transform: translateY(-100%);
+}
+
+@media screen(lg) {
+	.menu-hidden {
+		transition: none;
+		transform: none;
+	}
+
+	ul.navList > li {
+		@apply inline-block;
+		@apply ml-4;
+	}
+
+	ul.navList > li:first-of-type {
+		@apply ml-0;
+	}
 }
