@@ -7,7 +7,6 @@ document.addEventListener('scroll',
 
         if (document.scrollingElement.scrollTop >= heroText.offsetTop - 150) {
             navbar.classList.remove("after:lg:bg-transparent")
-            navbar.clientTop
         }
         else {
             navbar.classList.add("after:lg:bg-transparent")
