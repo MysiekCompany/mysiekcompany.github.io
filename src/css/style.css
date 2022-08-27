@@ -5,48 +5,71 @@
 @tailwind utilities;
 
 :root {
-	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
 
-	color: black;
+    color: black;
+
+    /* used by navbar */
+    --activeColor: #7dd3fc;
 }
 
 body {
-	margin: 0;
-	min-height: 100vh;
+    margin: 0;
+    min-height: 100vh;
 }
 
 .heroBackground {
-	width: 100vw;
-	max-height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
 }
 
 ul.navList > li {
-	@apply block;
-	@apply cursor-pointer;
-	@apply text-left;
+    @apply block cursor-pointer text-left;
 }
 
 ul.navList > li.active {
-	color: #7dd3fc;
+    color: var(--activeColor);
 }
 
 .menu-hidden {
-	transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.rule-list {
+    counter-reset: rules;
+}
+
+.rule-list > li {
+    position: relative;
+}
+
+.rule-list > li::before {
+    @apply block bg-sky-400 dark:bg-sky-800 dark:text-white mx-auto my-8 h-16 w-16 rounded-full flex items-center justify-center;
+
+    counter-increment: rules;
+    content: counter(rules);
+}
+
+.rule-list > li:first-of-type::before {
+    margin-top: 0;
 }
 
 @media screen(lg) {
-	.menu-hidden {
-		transition: none;
-		transform: none;
-	}
+    .menu-hidden {
+        transition: none;
+        transform: none;
+    }
 
-	ul.navList > li {
-		@apply inline-block;
-		@apply ml-4;
-	}
+    ul.navList > li {
+        @apply inline-block ml-4;
+    }
 
-	ul.navList > li:first-of-type {
-		@apply ml-0;
-	}
+    ul.navList > li:first-of-type {
+        @apply ml-0;
+    }
+
+    .rule-list > li::before {
+        content: none;
+    }
 }
