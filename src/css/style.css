@@ -55,7 +55,7 @@ ul.navList > li.active {
     margin-top: 0;
 }
 
-.tb-png{
+.tb-png {
     background-image: url(../img/logo_white.png);
     width: 5rem;
     height: 5rem;
@@ -63,9 +63,11 @@ ul.navList > li.active {
     display: block;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%) hue-rotate(86deg) brightness(102%) contrast(102%);
 }
+
 .tb-png:hover {
     filter: brightness(0) saturate(100%) invert(52%) sepia(60%) saturate(2866%) hue-rotate(194deg) brightness(95%) contrast(88%);
 }
+
 .trucky-png {
     background-image: url(../img/trucky_logo.png);
     width: 5.5rem;
@@ -73,13 +75,34 @@ ul.navList > li.active {
     background-size: 5.5rem;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%) hue-rotate(86deg) brightness(102%) contrast(102%);
 }
+
 .trucky-png:hover {
     filter: brightness(0) saturate(100%) invert(11%) sepia(96%) saturate(3735%) hue-rotate(330deg) brightness(94%) contrast(90%);
 }
-.rekrutacja::after {
-    left: 2.5rem;
-    width: 20rem;
+
+.header-box {
+    position: relative;
+    text-transform: uppercase;
+    @apply text-5xl sm:text-6xl tracking-wider rounded leading-snug mx-10 after:-bottom-2 after:absolute mx-10;
 }
+
+.header-box::after {
+    content: '';
+    display: block;
+    @apply bg-sky-500;
+    width: calc(100% + 2.5rem);
+    left: -1.25rem;
+    height: 3px;
+    box-shadow: 0 2px 6px #0ea5e9;
+}
+
+@media screen(sm) {
+    .header-box::after {
+        height: 5px;
+        @apply -bottom-4;
+    }
+}
+
 
 @media screen(lg) {
     .menu-hidden {
