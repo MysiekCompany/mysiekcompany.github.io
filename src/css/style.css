@@ -55,6 +55,32 @@ ul.navList > li.active {
     margin-top: 0;
 }
 
+.tb-png{
+    background-image: url(../img/logo_white.png);
+    width: 5rem;
+    height: 5rem;
+    background-size: 5rem;
+    display: block;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%) hue-rotate(86deg) brightness(102%) contrast(102%);
+}
+.tb-png:hover {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(60%) saturate(2866%) hue-rotate(194deg) brightness(95%) contrast(88%);
+}
+.trucky-png {
+    background-image: url(../img/trucky_logo.png);
+    width: 5.5rem;
+    height: 5.5rem;
+    background-size: 5.5rem;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%) hue-rotate(86deg) brightness(102%) contrast(102%);
+}
+.trucky-png:hover {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(96%) saturate(3735%) hue-rotate(330deg) brightness(94%) contrast(90%);
+}
+.rekrutacja::after {
+    left: 2.5rem;
+    width: 20rem;
+}
+
 @media screen(lg) {
     .menu-hidden {
         transition: none;
