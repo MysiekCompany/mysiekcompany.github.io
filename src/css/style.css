@@ -106,8 +106,9 @@ ul.navList > li.active {
     @apply my-10;
 }
 
-.circle-icon:hover > i {
+.offer-section:hover .circle-icon > i {
     transform: scale(.8);
+    @apply text-white;
 }
 
 .circle-icon::after {
@@ -125,7 +126,7 @@ ul.navList > li.active {
     @apply transition-transform;
 }
 
-.circle-icon:hover::after {
+.offer-section:hover .circle-icon::after {
     transform: scale(1);
 }
 
