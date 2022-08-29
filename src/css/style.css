@@ -96,6 +96,40 @@ ul.navList > li.active {
     box-shadow: 0 2px 6px #0ea5e9;
 }
 
+.circle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 10;
+    @apply my-10;
+}
+
+.offer-section:hover .circle-icon > i {
+    transform: scale(.8);
+    @apply text-white;
+}
+
+.circle-icon::after {
+    --diameter: 180%;
+
+    display: block;
+    position: absolute;
+    content: '';
+    width: var(--diameter);
+    height: var(--diameter);
+    border-radius: 50%;
+    transform: scale(0);
+    z-index: -1;
+
+    @apply transition-transform;
+}
+
+.offer-section:hover .circle-icon::after {
+    transform: scale(1);
+}
+
 @media screen(sm) {
     .header-box::after {
         height: 5px;
