@@ -55,31 +55,6 @@ ul.navList > li.active {
     margin-top: 0;
 }
 
-.tb-png {
-    background-image: url(../img/logo_white.png);
-    width: 5rem;
-    height: 5rem;
-    background-size: 5rem;
-    display: block;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%) hue-rotate(86deg) brightness(102%) contrast(102%);
-}
-
-.tb-png:hover {
-    filter: brightness(0) saturate(100%) invert(52%) sepia(60%) saturate(2866%) hue-rotate(194deg) brightness(95%) contrast(88%);
-}
-
-.trucky-png {
-    background-image: url(../img/trucky_logo.png);
-    width: 5.5rem;
-    height: 5.5rem;
-    background-size: 5.5rem;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7467%) hue-rotate(86deg) brightness(102%) contrast(102%);
-}
-
-.trucky-png:hover {
-    filter: brightness(0) saturate(100%) invert(11%) sepia(96%) saturate(3735%) hue-rotate(330deg) brightness(94%) contrast(90%);
-}
-
 .header-box {
     position: relative;
     text-transform: uppercase;
@@ -94,40 +69,6 @@ ul.navList > li.active {
     left: -1.25rem;
     height: 3px;
     box-shadow: 0 2px 6px #0ea5e9;
-}
-
-.circle-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-    z-index: 10;
-    @apply my-10;
-}
-
-.offer-section:hover .circle-icon > i {
-    transform: scale(.8);
-    @apply text-white;
-}
-
-.circle-icon::after {
-    --diameter: 180%;
-
-    display: block;
-    position: absolute;
-    content: '';
-    width: var(--diameter);
-    height: var(--diameter);
-    border-radius: 50%;
-    transform: scale(0);
-    z-index: -1;
-
-    @apply transition-transform;
-}
-
-.offer-section:hover .circle-icon::after {
-    transform: scale(1);
 }
 
 @media screen(sm) {
