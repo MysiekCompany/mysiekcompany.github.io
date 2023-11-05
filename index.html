@@ -1,170 +1,362 @@
 <!DOCTYPE html>
 <html lang="pl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logomsc-cd6c596a.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mysiek Company</title>
 
-<head>
-    <meta charset="UTF-8"/>
-
-    <link rel="icon" type="image/svg+xml" href="/assets/logomsc.cd6c596a.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     
-
     
     
+    <script
+      defer
+      data-domain="mysiek.pl"
+      src="https://analytics.dewidos.pl/js/script.js"
+    ></script>
+    <script type="module" crossorigin src="/assets/index-e998f939.js"></script>
+    <link rel="stylesheet" href="/assets/index-b2bb3eee.css">
+  </head>
 
-    <title>MysiekCompany</title>
-  <script type="module" crossorigin src="/assets/index.75b2927a.js"></script>
-  <link rel="stylesheet" href="/assets/index.43236857.css">
-</head>
-
-<body class="bg-gray-900 text-center">
-<div class="flex flex-col">
-    <nav class="after:dark:bg-cyan-900 after:bg-cyan-700 after:lg:bg-transparent after:absolute after:inset-0 after:-z-1 isolate fixed top-0 w-full z-20 flex items-center justify-between px-3 text-white font-semibold text-xl after:transition-colors"
-         id="navbar">
-        <p class="p-5"><a href="#">MysiekCompany</a></p>
-        <button class="block bg-white text-black text-2xl px-3 py-1 rounded mr-5 my-4 lg:hidden" id="menu-toggle">
-            <i class="bi bi-list"></i>
+  <body class="bg-gray-900 text-center">
+    <div class="flex flex-col">
+      <nav
+        class="after:dark:bg-cyan-900 after:bg-cyan-700 after:lg:bg-transparent after:absolute after:inset-0 after:-z-1 isolate fixed top-0 w-full z-20 flex items-center justify-between px-3 text-white font-semibold text-xl after:transition-colors"
+        id="navbar"
+      >
+        <p class="p-5"><a href="#">Mysiek Company</a></p>
+        <button
+          class="block bg-white text-black text-2xl px-3 py-1 rounded mr-5 my-4 lg:hidden"
+          id="menu-toggle"
+        >
+          <i class="bi bi-list"></i>
         </button>
-        <div class="absolute menu-hidden overflow-hidden -z-10 w-full lg:w-auto px-3 lg:px-0 lg:z-auto left-0 top-full dark:bg-cyan-900 bg-cyan-700 lg:bg-transparent lg:block lg:static transition-transform origin-top"
-             id="menu">
-            <ul class="navList leading-10 lg:leading-normal uppercase p-5">
-                <li class="active" id="home-nav"><a href="#">Home</a></li>
-                <li id="onas-nav"><a href="#onas">O nas</a></li>
-                <li id="oferta-nav"><a href="#oferta">Co oferujemy</a></li>
-                <li id="rekru-nav"><a href="#rekru">Rekrutacja</a></li>
-                <li id="regulamin-nav"><a href="#regulamin">Regulamin</a></li>
-            </ul>
+        <div
+          class="absolute menu-hidden overflow-hidden -z-10 w-full lg:w-auto px-3 lg:px-0 lg:z-auto left-0 top-full dark:bg-cyan-900 bg-cyan-700 lg:bg-transparent lg:block lg:static transition-transform origin-top"
+          id="menu"
+        >
+          <ul class="navList leading-10 lg:leading-normal uppercase p-5">
+            <li class="active" id="home-nav"><a href="#">Home</a></li>
+            <li id="onas-nav"><a href="#onas">O nas</a></li>
+            <li id="oferta-nav"><a href="#oferta">Co oferujemy</a></li>
+            <li id="rekru-nav"><a href="#rekru">Rekrutacja</a></li>
+            <li id="regulamin-nav"><a href="#regulamin">Regulamin</a></li>
+          </ul>
         </div>
-    </nav>
-    <!--@formatter:off-->
-    <header class="relative flex flex-col justify-center items-center px-10 py-32 min-h-screen isolate after:absolute after:inset-0 after:-z-1 after:opacity-40 after:bg-cover after:bg-center after:bg-siedziba">
-        <h1 class="text-white uppercase text-5xl 2xl:text-7xl font-semibold leading-normal 2xl:leading-snug"
-            id="hero-text">Najlepsza wirtualna spedycja w Polsce</h1>
-        <a href="#onas"><button class="relative z-10 mt-10 before:-z-1 before:scale-0 before:w-[calc(100%+1rem)] before:h-[calc(100%+1rem)] before:bg-sky-600/80 before:block before:absolute before:-translate-x-[.5rem] before:-translate-y-[.5rem] before:rounded before:transform-gpu before:transition-transform focus:before:scale-100">
-            <p class="px-10 py-4 text-xl block rounded uppercase transition-colors bg-sky-500 hover:bg-sky-600 active:outline active:outline-2 active:outline-yellow-400">
-                Dowiedz się więcej</p>
-        </button></a>
-    </header>
-    <!--@formatter:on-->
-    <section class="bg-slate-50 dark:bg-gray-800 dark:text-white flex flex-col items-center justify-center py-20"
-             id="onas">
-        <h2 class="header-box">
-            O nas</h2>
-        <div class="flex flex-col justify-center items-center md:flex-row max-w-screen-lg mx-10 mt-16">
-            <img src="/assets/mysocial24.294ea92e.png" class="flex-1 mx-auto md:mx-0 max-h-48 rounded-full" alt="Mysocial24">
-            <p class="text-2xl mt-10 md:mt-0 md:ml-10 flex-grow text-center md:text-left leading-normal">
-                MysiekCompany to niewielka wirtualna spedycja w grze ETS2. Jej właścicielem jest youtuber <a
-                    href="https://www.youtube.com/c/mysocial24" class="underline" target="_blank">Mysocial24</a>,
-                który zgromadził na swoim kanale ponad 70 tys. subskrypcji. Jako że głównym tematem jego kanału są
-                symulatory, do których ETS2 się zalicza, postanowił założyć własną wirtualną spedycję.</p>
+      </nav>
+      <!--@formatter:off-->
+      <header
+        class="relative flex flex-col justify-center items-center px-10 py-32 min-h-screen isolate after:absolute after:inset-0 after:-z-1 after:opacity-40 after:bg-cover after:bg-center after:bg-siedziba"
+      >
+        <h1
+          class="text-white uppercase text-5xl 2xl:text-7xl font-semibold leading-normal 2xl:leading-snug"
+          id="hero-text"
+        >
+          Najlepsza wirtualna spedycja w Polsce
+        </h1>
+        <a href="#onas"
+          ><button
+            class="relative z-10 mt-10 before:-z-1 before:scale-0 before:w-[calc(100%+1rem)] before:h-[calc(100%+1rem)] before:bg-sky-600/80 before:block before:absolute before:-translate-x-[.5rem] before:-translate-y-[.5rem] before:rounded before:transform-gpu before:transition-transform focus:before:scale-100"
+          >
+            <p
+              class="px-10 py-4 text-xl block rounded uppercase transition-colors bg-sky-500 hover:bg-sky-600 active:outline active:outline-2 active:outline-yellow-400"
+            >
+              Dowiedz się więcej
+            </p>
+          </button></a
+        >
+      </header>
+      <!--@formatter:on-->
+      <section
+        class="bg-slate-50 dark:bg-gray-800 dark:text-white flex flex-col items-center justify-center py-20"
+        id="onas"
+      >
+        <h2 class="header-box">O nas</h2>
+        <div
+          class="flex flex-col justify-center items-center md:flex-row max-w-screen-lg mx-10 mt-16"
+        >
+          <img
+            src="/assets/mysocial24-294ea92e.png"
+            class="flex-1 mx-auto md:mx-0 max-h-48 rounded-full"
+            alt="Mysocial24"
+          />
+          <p
+            class="text-2xl mt-10 md:mt-0 md:ml-10 flex-grow text-center md:text-left leading-normal"
+          >
+            Mysiek Company to niewielka wirtualna spedycja w grze ETS2. Jej
+            właścicielem jest youtuber
+            <a
+              href="https://www.youtube.com/c/mysocial24"
+              class="underline"
+              target="_blank"
+              >Mysocial24</a
+            >, który zgromadził na swoim kanale ponad 78 tys. subskrypcji. Jako
+            że głównym tematem jego kanału są symulatory, do których ETS2 się
+            zalicza, postanowił założyć własną wirtualną spedycję.
+          </p>
         </div>
-        <div class="flex flex-col justify-center items-center md:flex-row max-w-screen-lg mx-10 mt-16">
-            <img src="/assets/logomsc.cd6c596a.png" class="flex-1 mx-auto md:mx-0 max-h-48 rounded-full md:order-2 bg-sky-50 border-2 border-sky-300 dark:border-none dark:bg-white p-4" alt="Mysocial24">
-            <p class="text-2xl mt-10 md:mt-0 md:mr-10 flex-grow text-center md:text-right leading-normal">
-                Aktualnie w naszej firmie jeździ około stu kierowców, a ta liczba cały czas rośnie. Wymagania do MysiekCompany są bardzo niskie, więc nie musisz się martwić, że któregoś nie spełnisz :). Wszyscy kierowcy otrzymują wiele korzyści, o których dowiesz się niżej.</p>
+        <div
+          class="flex flex-col justify-center items-center md:flex-row max-w-screen-lg mx-10 mt-16"
+        >
+          <img
+            src="/assets/logomsc-cd6c596a.png"
+            class="flex-1 mx-auto md:mx-0 max-h-48 rounded-full md:order-2 bg-sky-50 border-2 border-sky-300 dark:border-none dark:bg-white p-4"
+            alt="Mysocial24"
+          />
+          <p
+            class="text-2xl mt-10 md:mt-0 md:mr-10 flex-grow text-center md:text-right leading-normal"
+          >
+            Aktualnie w naszej firmie jeździ około stu kierowców, a ta liczba
+            cały czas rośnie. Wymagania do Mysiek Company są bardzo niskie, więc
+            nie musisz się martwić, że któregoś nie spełnisz :). Wszyscy
+            kierowcy otrzymują wiele korzyści, o których dowiesz się niżej.
+          </p>
         </div>
-    </section>
-    <section class="bg-slate-200 dark:bg-gray-700 dark:text-white flex flex-col items-center justify-center py-20"
-             id="oferta">
-        <h2 class="header-box">
-            Co oferujemy</h2>
-        <div class="flex flex-col space-y-4 lg:space-x-4 lg:space-y-0 justify-center lg:flex-row w-full max-w-screen-xl mx-10 mt-12">
-            <div class="p-10 text-2xl flex flex-col justify-between items-center space-y-12 flex-1">
-                <div class="w-40 h-40 rounded-full bg-charcoal dark:bg-platinum flex items-center justify-center">
-                    <i class="bi bi-truck text-6xl text-white dark:text-charcoal"></i>
-                </div>
-                <h3 class="font-bold text-4xl leading-normal">Dobrą zabawę</h3>
-                <p class="text-2xl text-center leading-normal">Jeżeli lubisz grać w Euro Trucka, na pewno będziesz się świetnie bawił w MysiekCompany. Firma będzie cię zachęcać do jazdy konwojami, będziesz mógł rozmawiać z kolegami na <i>Firmowym CB</i>, będziesz mógł prosić dyspozytorów o przydzielenie trasy.</p>
+      </section>
+      <section
+        class="bg-slate-200 dark:bg-gray-700 dark:text-white flex flex-col items-center justify-center py-20"
+        id="oferta"
+      >
+        <h2 class="header-box">Co oferujemy</h2>
+        <div
+          class="flex flex-col space-y-4 lg:space-x-4 lg:space-y-0 justify-center lg:flex-row w-full max-w-screen-xl mx-10 mt-12"
+        >
+          <div
+            class="p-10 text-2xl flex flex-col justify-between items-center space-y-12 flex-1"
+          >
+            <div
+              class="w-40 h-40 rounded-full bg-charcoal dark:bg-platinum flex items-center justify-center"
+            >
+              <i class="bi bi-truck text-6xl text-white dark:text-charcoal"></i>
             </div>
-            <div class="p-10 text-2xl flex flex-col justify-between items-center space-y-12 flex-1">
-                <div class="w-40 h-40 rounded-full bg-excel flex items-center justify-center">
-                    <i class="bi bi-file-spreadsheet text-6xl text-white"></i>
-                </div>
-                <h3 class="font-bold text-4xl leading-normal">Realizm pod każdym względem</h3>
-                <p class="text-2xl text-center leading-normal">W MysiekCompany kładziemy ogromny nacisk na realizm. Każdy kierowca musi wypełniać dokumenty przewozowe, przestrzegać przepisów ruchu drogowego, tłumaczyć się z uszkodzeń. Uwierzcie nam, jest to świetna zabawa ;).</p>
+            <h3 class="font-bold text-4xl leading-normal">Dobrą zabawę</h3>
+            <p class="text-2xl text-center leading-normal">
+              Jeżeli lubisz grać w Euro Trucka, na pewno będziesz się świetnie
+              bawił w Mysiek Company. Firma będzie cię zachęcać do jazdy
+              konwojami, będziesz mógł rozmawiać z kolegami na
+              <i>Firmowym CB</i>, będziesz mógł prosić dyspozytorów o
+              przydzielenie trasy.
+            </p>
+          </div>
+          <div
+            class="p-10 text-2xl flex flex-col justify-between items-center space-y-12 flex-1"
+          >
+            <div
+              class="w-40 h-40 rounded-full bg-excel flex items-center justify-center"
+            >
+              <i class="bi bi-file-spreadsheet text-6xl text-white"></i>
             </div>
-            <div class="p-10 text-2xl flex flex-col justify-between items-center space-y-12 flex-1">
-                <div class="w-40 h-40 rounded-full bg-youtube flex items-center justify-center">
-                    <i class="bi bi-youtube text-6xl text-white"></i>
-                </div>
-                <h3 class="font-bold text-4xl leading-normal">Rozgłos kanału YouTube</h3>
-                <p class="text-2xl text-center leading-normal">Dzięki temu, że właścicielem firmy jest <a
-                        href="https://www.youtube.com/c/mysocial24" class="underline" target="_blank">Mysocial24</a>, członkowie firmy mają szansę pokazać się na jego kanale. Czasami Mysiek nagrywa filmy z kierowcami naszej firmy. Wystarczą tylko chęci i trochę wolnego czasu w momencie nagrywek :).</p>
+            <h3 class="font-bold text-4xl leading-normal">
+              Realizm pod każdym względem
+            </h3>
+            <p class="text-2xl text-center leading-normal">
+              W Mysiek Company kładziemy ogromny nacisk na realizm. Każdy
+              kierowca musi wypełniać dokumenty przewozowe, przestrzegać
+              przepisów ruchu drogowego, tłumaczyć się z uszkodzeń. Uwierzcie
+              nam, jest to świetna zabawa ;).
+            </p>
+          </div>
+          <div
+            class="p-10 text-2xl flex flex-col justify-between items-center space-y-12 flex-1"
+          >
+            <div
+              class="w-40 h-40 rounded-full bg-youtube flex items-center justify-center"
+            >
+              <i class="bi bi-youtube text-6xl text-white"></i>
             </div>
+            <h3 class="font-bold text-4xl leading-normal">
+              Rozgłos kanału YouTube
+            </h3>
+            <p class="text-2xl text-center leading-normal">
+              Dzięki temu, że właścicielem firmy jest
+              <a
+                href="https://www.youtube.com/c/mysocial24"
+                class="underline"
+                target="_blank"
+                >Mysocial24</a
+              >, członkowie firmy mają szansę pokazać się na jego kanale.
+              Czasami Mysiek nagrywa filmy z kierowcami naszej firmy. Wystarczą
+              tylko chęci i trochę wolnego czasu w momencie nagrywek :).
+            </p>
+          </div>
         </div>
-    </section>
-    <section class="bg-slate-50 dark:bg-gray-800 dark:text-white flex flex-col items-center justify-center py-20"
-             id="rekru">
-        <h2 class="header-box">
-            Rekrutacja</h2>
-        <div class="flex flex-col justify-center items-center md:flex-row max-w-screen-lg mx-10 mt-16">
-            <div class="w-40 h-40 rounded-full bg-paper flex items-center justify-center mx-auto md:mx-0 flex-shrink-0">
-                <i class="bi bi-envelope-paper text-6xl text-charcoal"></i>
-            </div>
-            <p class="text-2xl mt-10 md:mt-0 md:ml-10 flex-grow flex items-center text-center md:text-left justify-center leading-normal">
-                Rekrutacja do naszej firmy jest nieustannie otwarta ;). Ciągle poszukujemy nowych kierowców do naszego zespołu. Jeśli czujesz, że się w nim odnajdziesz, poniżej znajdziesz potrzebne Ci informacje.</p>
+      </section>
+      <section
+        class="bg-slate-50 dark:bg-gray-800 dark:text-white flex flex-col items-center justify-center py-20"
+        id="rekru"
+      >
+        <h2 class="header-box">Rekrutacja</h2>
+        <div
+          class="flex flex-col justify-center items-center md:flex-row max-w-screen-lg mx-10 mt-16"
+        >
+          <div
+            class="w-40 h-40 rounded-full bg-paper flex items-center justify-center mx-auto md:mx-0 flex-shrink-0"
+          >
+            <i class="bi bi-envelope-paper text-6xl text-charcoal"></i>
+          </div>
+          <p
+            class="text-2xl mt-10 md:mt-0 md:ml-10 flex-grow flex items-center text-center md:text-left justify-center leading-normal"
+          >
+            Rekrutacja do naszej firmy jest nieustannie otwarta ;). Ciągle
+            poszukujemy nowych kierowców do naszego zespołu. Jeśli czujesz, że
+            się w nim odnajdziesz, poniżej znajdziesz potrzebne Ci informacje.
+          </p>
         </div>
-        <div class="flex flex-col md:flex-row text-left justify-center items-center leading-normal max-w-screen-lg mx-10 mt-16 w-full gap-24 md:gap-48">
-            <a href="https://discord.com/invite/hygFmnneXG" target="_blank">
-                <div class="w-40 h-40 rounded-full bg-discord flex items-center justify-center hover:scale-110 hover:bg-discord-darker transition-all cursor-pointer">
-                    <i class="bi bi-discord text-7xl text-white"></i>
-                </div>
-            </a>
-            <a href="https://e.truckyapp.com/vtc/mysiek-company" target="_blank">
-                <div class="w-40 h-40 rounded-full bg-trucky flex items-center justify-center hover:scale-110 hover:bg-trucky-darker transition-all cursor-pointer">
-                    <img src="/assets/trucky_logo.845392c0.png" alt="Trucky" class="w-20">
-                </div>
-            </a>
-        </div>
-    </section>
-    <section class="bg-slate-200 dark:bg-gray-700 dark:text-white flex flex-col items-center justify-center py-20"
-             id="regulamin">
-        <h2 class="header-box">
-            Regulamin</h2>
-            <div class="text-2xl mt-16 flex-grow flex flex-col space-y-16 text-left justify-between leading-normal max-w-screen-lg mx-10">
-                <h3 class="text-5xl leading-normal font-bold text-center">Regulamin firmy MysiekCompany</h3>
-                <p class="text-3xl font-semibold leading-normal text-center">Najważniejsze punkty są wyróżnione <span class="text-red-700 dark:text-red-400">kolorem czerwonym</span>.</p>
-                <ol class="lg:list-decimal space-y-5 rule-list text-center lg:text-left">
-                    <li>Nieznajomość regulaminu nie zwalnia z jego przestrzegania.</li>
-                    <li><span class="text-red-700 dark:text-red-400">Każdy pracownik zobowiązany jest posiadać konto na platformie Trucky i używać go podczas gry w ETS2.</span></li>
-                    <li>Pracownik, który nie przejedzie ani kilometra w danym miesiącu bez wyraźnego powodu zostaje wydalony z firmy Mysiek Company.</li>
-                    <li><span class="text-red-700 dark:text-red-400">Każdy kierowca tworzący duże straty pieniężne dla firmy zostanie wydalony.</span></li>
-                    <li>Malowanie firmowe zestawu obowiązuje na konwojach wewnętrznych i między firmowych.</li>
-                    <li>Każdy kierowca zobowiązuje się do wypełniania poprawnie rozliczenia tygodniowego.</li>
-                    <li>Kierowca jest zobowiązany do poprawienia ewentualnych błędów w dokumentacji.</li>
-                    <li>Każdy kierowca i dyspozytor jest zobowiązany do realnej gry.</li>
-                    <li>Podczas gier multiplayer wszyscy kierowcy mają obowiązek zachowywać się na najwyższym poziomie kultury.</li>
-                    <li>Każdy kierowca jest zobowiązany do przestrzegania Kodeksu Ruchu Drogowego.</li>
-                    <li><span class="text-red-700 dark:text-red-400">Każdy transport zakwalifikowany jako <i>wyścig</i> będzie karany ostrzeżeniem. Trzecie ostrzeżenie wiąże się z komisją dyscyplinarną.</span></li>
-                    <li><span class="text-red-700 dark:text-red-400">Każdemu kierowcy przysługuje urlop nie dłuższy niż 1 tydzień, wystarczy napisać do dyspozytora albo szefa.</span></li>
-                    <li>Kierowca może aplikować na dyspozytora na kanale <i>rekru-na-dyspo</i>, ale musi mieć przejechane 10 tysięcy kilometrów w firmie oraz być dobrym kierowcą.</li>
-                    <li>Mile widziane odnoszenie się do siebie <i>kolego</i>.</li>
-                    <li>Nie odrzucamy zleceń od dyspozytora.</li>
-                    <li>Prosimy o regularne śledzenie ogłoszeń na kanale <i>ogłoszenia</i>.</li>
-                    <li>Kierowcy muszą w każdym tygodniu przejechać minimum 1,5 tysiąca kilometrów, a w każdym miesiącu minimum 6 tysięcy kilometrów.</li>
-                    <li>Trasy bierzemy tylko z Dyspozytorni z kanałów <i>trasy</i> i <i>kontrakty</i>.</li>
-                    <li>Każdy kierowca w czasie robienia trasy na firmę powinien być na którymś z firmowych kanałów głosowych. Nie można na nich wyciszać dźwięku. Na kanale <i>Nasłuch dyspozytora</i> mogą mówić tylko dyspozytorzy, więc nie bójcie się o spam.</li>
-                    <li>Uszkodzenia od 10% wymagają uzasadnienia na 70 słów na kanale <i>inne-dokumenty</i>.</li>
-                    <li><span class="text-red-700 dark:text-red-400">Kierowca zobowiązuje się do dokładnego wybrania miasta oraz miejsc załadunku i rozładunku, jak i wybrania odpowiedniego ładunku w aplikacji Trucky.</span></li>
-                    <li>Kierowca jest zobowiązany przydzielić sobie odpowiednie rangi DLC oraz modów na mapę zgodnie z prawdą. Odpowiednie reakcje dostępne są na kanale <i>dodatki</i>.</li>
-                    <li>Zakaz używania modów na inne firmy niż są w podstawce gry.</li>
-                </ol>
-                <p class="text-4xl font-semibold leading-normal text-center">Dodatkowe punkty regulaminu dla kierowców PKS.</p>
-                <ol class="lg:list-decimal space-y-5 rule-list text-center lg:text-left">
-                    <li>Każdy kierowca musi wybierać trasy tylko z kanału <i>rozkład-jazdy</i>.</li>
-                    <li>Kierowca autobusu nie może odjechać z przystanku przed godziną odjazdu w Rozkładzie Jazdy.</li>
-                    <li>Każdy kierowca po wykonanym kursie ma obowiązek przesłać raport wygenerowany za pomocą programu firmowego <b>SKAM</b>.</li>
-                    <li>Opóźnienia powyżej 5 minut będą rozpatrywane przez dyspozytorów i mogą podlegać upomnieniu, a w zwiększonej częstotliwości karze.</li>
-                </ol>
-                <p class="text-4xl font-semibold leading-normal text-center">Zarządcy firmy MysiekCompany zastrzegają sobie prawo do zmiany regulaminu w dowolnej chwili.</p>
+        <div
+          class="flex flex-col md:flex-row text-left justify-center items-center leading-normal max-w-screen-lg mx-10 mt-16 w-full gap-24 md:gap-48"
+        >
+          <a href="https://discord.com/invite/hygFmnneXG" target="_blank">
+            <div
+              class="w-40 h-40 rounded-full bg-discord flex items-center justify-center hover:scale-110 hover:bg-discord-darker transition-all cursor-pointer"
+            >
+              <i class="bi bi-discord text-7xl text-white"></i>
             </div>
-    </section>
-    <footer class="dark:bg-cyan-900 bg-cyan-700 flex items-center justify-evenly px-2 text-white text-xl py-5">
-        <p>&copy; 2023 MysiekCompany</p>
-        <p>Wykonanie: <a href="https://dewidos.pl" target="_blank" class="hover:underline">dewidos.pl</a></p>
-    </footer>
-</div>
-</body>
+          </a>
+          <a href="https://trucksbook.eu/company/138431" target="_blank">
+            <div
+              class="w-40 h-40 rounded-full bg-trucksbook flex items-center justify-center hover:scale-110 hover:bg-trucksbook-darker transition-all cursor-pointer"
+            >
+              <img src="data:image/png;base64,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" alt="TrucksBook" class="w-16" />
+            </div>
+          </a>
+        </div>
+      </section>
+      <section
+        class="bg-slate-200 dark:bg-gray-700 dark:text-white flex flex-col items-center justify-center py-20"
+        id="regulamin"
+      >
+        <h2 class="header-box">Regulamin</h2>
+        <div
+          class="text-2xl mt-16 flex-grow flex flex-col space-y-16 text-left justify-between leading-normal max-w-screen-lg mx-10"
+        >
+          <h3 class="text-5xl leading-normal font-bold text-center">
+            Regulamin firmy Mysiek Company
+          </h3>
+          <p class="text-3xl font-semibold leading-normal text-center">
+            Najważniejsze punkty są wyróżnione
+            <span class="text-red-700 dark:text-red-400">kolorem czerwonym</span
+            >.
+          </p>
+          <ol
+            class="lg:list-decimal space-y-5 rule-list text-center lg:text-left"
+          >
+            <li>Nieznajomość regulaminu nie zwalnia z jego przestrzegania.</li>
+            <li>
+              <span class="text-red-700 dark:text-red-400"
+                >Każdy pracownik zobowiązany jest posiadać konto na platformie
+                TrucksBook i używać go podczas gry w ETS2.</span
+              >
+            </li>
+            <li>
+              Pracownik, który nie przejedzie ani kilometra w danym miesiącu bez
+              wyraźnego powodu zostaje wydalony z firmy Mysiek Company.
+            </li>
+            <li>
+              Malowanie firmowe zestawu obowiązuje na konwojach wewnętrznych i
+              między firmowych.
+            </li>
+            <li>
+              Każdy kierowca zobowiązuje się do wypełniania poprawnie Karty
+              Drogowej.
+            </li>
+            <li>Tylko dyspozytorzy mogą nadawać trasy w firmie.</li>
+            <li>
+              Kierowca jest zobowiązany do poprawienia ewentualnych błędów w
+              dokumentacji.
+            </li>
+            <li>
+              Każdy kierowca i dyspozytor jest zobowiązany do realnej gry.
+            </li>
+            <li>
+              Podczas gier multiplayer wszyscy kierowcy mają obowiązek
+              zachowywać się na najwyższym poziomie kultury.
+            </li>
+            <li>
+              Każdy kierowca jest zobowiązany do przestrzegania Kodeksu Ruchu
+              Drogowego.
+            </li>
+            <li>
+              <span class="text-red-700 dark:text-red-400"
+                >Każdy transport zakwalifikowany jako <i>wyścig</i> będzie
+                karany ostrzeżeniem. Trzecie ostrzeżenie wiąże się z komisją
+                dyscyplinarną.</span
+              >
+            </li>
+            <li>
+              <span class="text-red-700 dark:text-red-400"
+                >Każdemu kierowcy przysługuje urlop nie dłuższy niż 1 tydzień,
+                wystarczy napisać do dyspozytora albo szefa.</span
+              >
+            </li>
+            <li>
+              Kierowca może aplikować na dyspozytora na kanale
+              <i>rekru-na-dyspo</i>, ale musi mieć przejechane 15 tysięcy
+              kilometrów w firmie oraz być dobrym kierowcą.
+            </li>
+            <li>Mile widziane odnoszenie się do siebie <i>kolego</i>.</li>
+            <li>Nie odrzucamy zleceń od dyspozytora.</li>
+            <li>
+              Prosimy o regularne śledzenie ogłoszeń na kanale
+              <i>ogłoszenia</i>.
+            </li>
+            <li>Limit miesięczny wynosi 6 tysięcy kilometrów.</li>
+            <li>
+              <span class="text-red-700 dark:text-red-400"
+                >Trasy bierzemy tylko z Dyspozytorni z kanałów TrucksBook.</span
+              >
+            </li>
+            <li>
+              Każdy kierowca w czasie robienia trasy na firmę powinien być na
+              którymś z kanałów głosowych, które nie mają limitu osób. Nie można
+              na nich wyciszać dźwięku. Na kanale
+              <i>Nasłuch dyspozytora</i> mogą mówić tylko dyspozytorzy, więc nie
+              bójcie się o spam.
+            </li>
+            <li>
+              Uszkodzenia od 10% wymagają uzasadnienia na 70 słów na kanale
+              <i>inne-dokumenty</i>.
+            </li>
+            <li>Zakaz używania moda na inne firmy niż są w podstawce gry.</li>
+            <li>
+              Dyspozytor nie może sobie dawać trasy (za wyjątkiem sytuacji, w
+              której od 3 minut nikt nie zaakceptował jego wiadomości na kanale
+              <i>szukam-trasy</i>).
+            </li>
+            <li>
+              Kierowca może w uwagach do <i>szukam-trasy</i> wymienić jednego
+              dyspozytora od którego <b>nie chce</b> dostać trasy, wskazany
+              dyspozytor nie może mu jej wystawić.
+            </li>
+            <li>Kierowcy nie powinni przekraczać spalania 35l/100km.</li>
+            <li>
+              Egzaminy firmowe muszą być wypełniane bez pomocy zewnętrzynych
+              danych, notatek i osób. Nie wolno udostępniać pytań i odpowiedzi
+              egzaminu na dyspozytora.
+            </li>
+          </ol>
+          <p class="text-4xl font-semibold leading-normal text-center">
+            Zarządcy firmy Mysiek Company zastrzegają sobie prawo do zmiany
+            regulaminu w dowolnej chwili.
+          </p>
+        </div>
+      </section>
+      <footer
+        class="dark:bg-cyan-900 bg-cyan-700 flex flex-col px-2 text-white text-xl py-5"
+      >
+        <div class="container flex items-center justify-between flex-1 mx-auto">
+          <p class="block">&copy; 2023 Mysiek Company</p>
+          <p class="block">
+            Wykonanie:
+            <a href="https://dewidos.pl" target="_blank" class="hover:underline"
+              >dewidos.pl</a
+            >
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
