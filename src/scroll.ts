@@ -1,71 +1,47 @@
-const heroText = document.getElementById('hero-text')
-const navbar = document.getElementById('navbar')
+class ScrollSpy {
+  id: string;
+  tag: HTMLElement;
+  element: HTMLElement;
 
-const homeNav = document.getElementById('home-nav')
-const aboutUs = document.getElementById('onas')
-const aboutUsNav = document.getElementById('onas-nav')
-const offer = document.getElementById('oferta')
-const offerNav = document.getElementById('oferta-nav')
-const recruitment = document.getElementById('rekru')
-const recruitmentNav = document.getElementById('rekru-nav')
-const rules = document.getElementById('regulamin')
-const rulesNav = document.getElementById('regulamin-nav')
+  constructor(id: string, tag: HTMLElement, element: HTMLElement) {
+    this.id = id;
+    this.tag = tag;
+    this.element = element;
+  }
+}
 
-document.addEventListener('scroll',
-    () => {
-        if (document.scrollingElement === null || heroText === null || navbar === null) return
+const heroText = document.querySelector<HTMLElement>("#hero-text");
+const navbar = document.querySelector<HTMLElement>("#navbar");
 
-        if (document.scrollingElement.scrollTop >= heroText.offsetTop - 150) {
-            navbar.classList.remove('after:lg:bg-transparent')
-        } else {
-            navbar.classList.add('after:lg:bg-transparent')
-        }
+const scrollSpyTags = document.querySelectorAll<HTMLElement>("*[scrollspy-id]");
+const scrollSpies: ScrollSpy[] = [];
 
-        if (homeNav === null || aboutUs === null || aboutUsNav === null || offer === null || offerNav === null || recruitment === null || recruitmentNav === null || rules === null || rulesNav === null) return
+scrollSpyTags.forEach((tag) => {
+  const scrollSpyId = tag.attributes.getNamedItem("scrollspy-id")?.value;
+  if (scrollSpyId === undefined) return;
 
-        if (document.scrollingElement.scrollTop + 60 >= rules.offsetTop) {
-            homeNav.classList.remove('active')
-            aboutUsNav.classList.remove('active')
-            offerNav.classList.remove('active')
-            recruitmentNav.classList.remove('active')
-            rulesNav.classList.add('active')
+  const element = document.querySelector<HTMLElement>(`#${scrollSpyId}`);
+  if (element === null) return;
 
-            return
-        }
-        if (document.scrollingElement.scrollTop + 60 >= recruitment.offsetTop) {
-            homeNav.classList.remove('active')
-            aboutUsNav.classList.remove('active')
-            offerNav.classList.remove('active')
-            recruitmentNav.classList.add('active')
-            rulesNav.classList.remove('active')
+  scrollSpies.push(new ScrollSpy(scrollSpyId, tag, element));
+});
 
-            return
-        }
-        if (document.scrollingElement.scrollTop + 60 >= offer.offsetTop) {
-            homeNav.classList.remove('active')
-            aboutUsNav.classList.remove('active')
-            offerNav.classList.add('active')
-            recruitmentNav.classList.remove('active')
-            rulesNav.classList.remove('active')
+document.addEventListener("scroll", () => {
+  if (document.scrollingElement!.scrollTop >= heroText!.offsetTop - 150) {
+    navbar?.classList.remove("after:lg:bg-transparent");
+  } else {
+    navbar?.classList.add("after:lg:bg-transparent");
+  }
 
-            return
-        }
-        if (document.scrollingElement.scrollTop + 60 >= aboutUs.offsetTop) {
-            homeNav.classList.remove('active')
-            aboutUsNav.classList.add('active')
-            offerNav.classList.remove('active')
-            recruitmentNav.classList.remove('active')
-            rulesNav.classList.remove('active')
+  scrollSpies.forEach((scrollSpy, i) => {
+    if (
+      document.scrollingElement!.scrollTop + 60 >=
+      scrollSpy.element.offsetTop
+    ) {
+      scrollSpy.tag.classList.add("active");
+      if (i > 0) scrollSpies[i - 1].tag.classList.remove("active");
+    } else scrollSpy.tag.classList.remove("active");
+  });
+});
 
-            return
-        }
-
-        homeNav.classList.add('active')
-        aboutUsNav.classList.remove('active')
-        offerNav.classList.remove('active')
-        recruitmentNav.classList.remove('active')
-        rulesNav.classList.remove('active')
-    }
-)
-
-export {}
+export {};
